@@ -15,6 +15,7 @@ body {
   background-color: #1c1c1c;
   color: #e0d7cb;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 /* NAVBAR CSS */
@@ -147,7 +148,6 @@ nav img {
   max-width: 60%;
   padding: 2em 1em;
   box-shadow: 0 0 1.5em black;
-  margin-bottom: 15em;
 }
 .container h3 {
   display: inline-block;
@@ -160,24 +160,6 @@ nav img {
   padding-right: 0.5em;
   line-height: 1.5em;
 }
-.wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-.wave svg {
-  position: relative;
-  display: block;
-  max-width: 100%;
-  min-height: 40vh;
-}
-.wave .shape-fill {
-  fill: #141414;
-}
-
 /* BOOKS SECTION CSS */
 .books--section {
   background-color: #141414;
@@ -185,6 +167,7 @@ nav img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .books--section h2{
   font-size: 2rem;
@@ -200,20 +183,29 @@ nav img {
 }
 .books--wrapper{
   padding: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 3em;
   min-height: 50vh;
 }
+.books--wrapper1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  margin-top: 3em;
+}
 .books{
-  max-width: 25%;
+  max-width: 15em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
   row-gap: 1em;
 }
 .books--image{
-  max-width: max-content;
+  max-width: 10%;
   min-height: 10em;
 }
 .books img{
