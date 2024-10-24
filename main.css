@@ -120,7 +120,7 @@ nav img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+  padding: 5em 0;
   min-height: 100vh;
   position: relative;
 }
@@ -159,10 +159,32 @@ nav img {
   padding-left: 2em;
   padding-right: 0.5em;
   line-height: 1.5em;
+  margin-bottom: 1.5em;
 }
+.container a{
+  color: #141414;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.3em 1em;
+  border: 2px solid;
+  border-radius: 20%;
+  background: linear-gradient(to right, orange, orangered) ;
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.container a:hover{
+  opacity: 0.6;
+}
+
+
+
 /* BOOKS SECTION CSS */
 .books--section {
   background-color: #141414;
+  padding: 8em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,5 +249,128 @@ nav img {
   transition: all 0.3s ease;
 }
 .books a:hover{
+  opacity: 0.6;
+}
+
+
+/* PEOPLE SECTION CSS */
+.people--section{
+  padding: 8em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.people--section h2{
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.people--section hr{
+  border: 1px solid ;
+  border-image: linear-gradient(to right, orange, orangered) 1;
+  width: 10vw;
+  margin-bottom: 3em;
+}
+.people--container{
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3em;
+}
+.people--wrapper{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2em;
+  padding-inline: 3em;
+}
+.people--image{
+  max-width: 45%;
+ 
+}
+.people--image img{
+  max-width: 100%;
+  border-radius: 5%;
+}
+.people--wrapper p{
+  margin-top: 1em;
+  padding-left: 1em;
+  border-left: 2px solid orangered;
+}
+
+
+/* CONTACT CSS */
+.contact--section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 8em;
+  background-color: #141414;
+}
+.contact--section h2{
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.contact--section hr{
+  border: 1px solid ;
+  border-image: linear-gradient(to right, orange, orangered) 1;
+  width: 10vw;
+  margin-bottom: 3em;
+}
+.contact--form{
+  max-width: 100%;
+}
+.contact--form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2em;
+  max-width: 100%;
+  border: 2px solid rgba(255, 68, 0, 0.46);
+  border-radius: 5%;
+  padding: 3em;
+  box-shadow: 0 0 2em black;
+}
+form h3{
+  font-size: 1.3em;
+}
+
+.form--inputs{
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+form input{
+  font-weight: 600;
+  color: #141414;
+  background-color: aliceblue;
+  border: none;
+  max-width: 100%;
+  padding: 0.5em 1em;
+  border-radius: 10%;
+}
+form textarea{
+  padding: 0.8em 1em;
+  background-color: aliceblue;
+  border-radius: 10%;
+  font-family: Poppins, sans-serif;
+}
+  form button
+  background-image: linear-gradient(45deg, orange, orangered);
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover{
   opacity: 0.6;
 }
